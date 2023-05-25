@@ -1,0 +1,116 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.mealType{
+    font-size: large;
+    font-weight: 400;
+    color: #787878;
+}
+
+.amount{
+    font-size: large;
+    font-weight: 400;
+    color: #787878;
+}
+
+.totalTime{
+    font-size: large;
+    font-weight: 400;
+    color: #787878;
+}
+
+.itemInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details{
+    height: 20px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    display: flex;
+    justify-content:space-between;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.ingredients{
+    margin-left: 20px;
+}
+
+.ingredientsDiv > ol{
+    margin: 0px;
+}
+
+.ingredientsDiv > ol > li{
+    font-size: large;
+    font-weight: 400;
+    color: #787878;
+}
+
+.save{
+    width: 100px;
+    height: 50px;
+    color: green;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: large;
+    background-color: white;
+    margin-top: -25px;
+}
+
+.itemImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ItemImgCmp{
+    border-radius: 25px;
+}
+
+.ItemMwebImgCmp{
+    display: none;
+}
+
+@media only screen and (max-width:481px) {
+    .ItemImgCmp{
+        display: none;
+    }
+
+    .ItemMwebImgCmp{
+        display: flex;
+        border-radius: 25px;
+    }
+    .itemInfo{
+        gap: 0px;
+    }
+    .ingredientsDiv > ol{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width:481px) {
+    .details{
+        width: 300px;
+    }
+}

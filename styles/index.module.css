@@ -1,0 +1,67 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.inputWrapper{
+    width: 1136px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    z-index: 2;
+    top: 10px;
+    position: sticky;
+    background-color: white;
+}
+
+.searchInput{
+    width: calc(100% - 80px);
+    padding: 8px;
+    height: 25px;
+    border-color: grey;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.searchBtn{
+    cursor: pointer;
+}
+
+.cardWrapper{
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.savedItemsTitle{
+    font-size: x-large;
+    font-weight: 800;
+    color: blue;
+}
+
+.savedItemsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (max-width:1136px) {
+    .inputWrapper{
+        width: 100%;
+    }
+
+    .cardWrapper{
+        width: 100%;
+    }
+}
+
